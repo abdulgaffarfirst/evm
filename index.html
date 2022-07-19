@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নির্বাচন EVM Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>৩ নং হোসেনগাঁও ইউনিয়ন পরিষধ নির্বাচন - ২০২২</h1>
+    </div>
+    <div class="row">
+
+        <div class="col-3 col-s-3 menu">
+            <!-- <ul>
+    	  		<li>The Flight</li>
+    	  		<li>The City</li>
+    	  		<li>The Island</li>
+    	  		<li>The Food</li>
+    		</ul> -->
+        </div>
+
+        <div class="col-6 col-s-9">
+            <div id="first">
+                <img src="baik.jpeg" alt="">
+                <button id="baik">ভোট দিন</button>
+                <span id="baikCount">28</span>
+            </div><br>
+            <div id="first">
+                <img src="gora.jpeg" alt="">
+                <button id="gora">ভোট দিন</button>
+                <span id="goraCount">43</span>
+            </div><br>
+            <div id="first">
+                <img id="nouka1" src="nouka.png" alt="">
+                <button id="nouka">ভোট দিন</button>
+                <span id="noukaCount">58</span>
+            </div><br>
+            <div id="first">
+                <img id="hati1" src="anaros.jpeg" alt="">
+                <button id="anaros">ভোট দিন</button>
+                <span id="anarosCount">51</span>
+            </div><br>
+            <div id="first">
+                <img id="cosma1" src="cosma.jpeg" alt="">
+                <button id="cosma">ভোট দিন</button>
+                <span id="cosmaCount">13</span>
+            </div>
+
+            <script>
+                // baik Vote
+                const baikBtn = document.getElementById("baik");
+                baikBtn.addEventListener("click", function () {
+                    alert("আপনার ভোটটি সফল ভাবে মোটর সাইকেল মার্কায় দেওয়া হলো!");
+
+                    // alert("ইভিএম এর মাধ্যমে ভোট দেওয়ার জন্য আপনাকে ধন্যবাদ..")
+                })
+                let count = 28;
+                const baikVote = document.getElementById("baik");
+                const baikVote1 = document.getElementById("baikCount")
+                baikVote.addEventListener("click", function () {
+                    baikVote1.innerHTML = ++count;
+                })
+
+
+                // gora Vote
+                const goraBtn = document.getElementById("gora");
+                goraBtn.addEventListener("click", function () {
+                    confirm("আপনার ভোটটি সফল ভাবে ঘোড়া মার্কায় দেওয়া হলো!");
+                })
+                let count2 = 43;
+                const goraVote = document.getElementById("gora");
+                const goraVote2 = document.getElementById("goraCount")
+                goraVote.addEventListener("click", function () {
+                    goraVote2.innerHTML = ++count2;
+                })
+
+
+                // nouka Vote
+                const noukaBtn = document.getElementById("nouka");
+                noukaBtn.addEventListener("click", function () {
+                    confirm("আপনার ভোটটি সফল ভাবে নৌকা মার্কায় দেওয়া হলো!");
+                })
+                let count3 = 58;
+                const noukaVote = document.getElementById("nouka");
+                const noukaVote3 = document.getElementById("noukaCount")
+                noukaVote.addEventListener("click", function () {
+                    noukaVote3.innerHTML = ++count3;
+                })
+
+
+                // anaros Vote
+                const anarosBtn = document.getElementById("anaros");
+                anarosBtn.addEventListener("click", function () {
+                    confirm("আপনার ভোটটি সফল ভাবে আনারস মার্কায় দেওয়া হলো!");
+                })
+                let count4 = 51;
+                const anarosVote = document.getElementById("anaros");
+                const anarosVote4 = document.getElementById("anarosCount")
+                anarosVote.addEventListener("click", function () {
+                    anarosVote4.innerHTML = ++count4;
+                })
+
+
+                // Chosma Vote
+                const cosmaBtn = document.getElementById("cosma");
+                cosmaBtn.addEventListener("click", function () {
+                    confirm("আপনার ভোটটি সফল ভাবে চশমা মার্কায় দেওয়া হলো!");
+                })
+                let count5 = 13;
+                const cosmaVote = document.getElementById("cosma");
+                const cosmaVote5 = document.getElementById("cosmaCount")
+                cosmaVote.addEventListener("click", function () {
+                    cosmaVote5.innerHTML = ++count5;
+                })
+            </script>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h3>ইভিএম সম্পর্কে জানুন</h3>
+                <p>EVM = Electronic Voting Machine</p>
+                <h4>ইলেকট্রনিক ভোটদান:</h4>
+                <p>ইলেকট্রনিক ভোটিং (ইংরেজি: Electronic voting) আধুনিক বিশ্বে গণতান্ত্রিক প্রক্রিয়ায় ভোট প্রয়োগ বা
+                    সংশ্লিষ্ট ভোটারদের স্বীয় মতামত প্রতিফলনের অন্যতম মাধ্যম। ভোট প্রয়োগে মেশিন বা ইলেকট্রনিক
+                    যন্ত্রপাতি অণুসৃত হয় বিধায় সামগ্রিক প্রক্রিয়াটি ইলেকট্রনিক ভোটিং মেশিন বা ইভিএম নামে পরিচিত।<br><br> এর
+                    অন্য নাম ই-ভোটিং। ইলেকট্রনিক প্রক্রিয়ায় এটি একাধারে সঠিকভাবে ভোট প্রয়োগ ও দ্রুততার সাথে ভোট গণনা
+                    করতে সক্ষম।</p>
+                <h3">ইভিএম ব্যবহার</h3>
+                <p>ভোট কেন্দ্র কিংবা ইন্টারনেটের মাধ্যমে ইলেকট্রনিক ভোটিং প্রক্রিয়া সম্পন্ন করা হয়। নিম্নে উল্লেখিত
+                    জোট কিংবা দেশসমূহে ইলেকট্রনিক ভোটিং মেশিনের সাহায্যে ইতোমধ্যেই ভোট নেয়া হয়েছে।
+
+                    সেগুলো হলোঃ- অস্ট্রেলিয়া, বেলজিয়াম, ব্রাজিল, কানাডা, এস্তোনিয়া, ইউরোপীয় ইউনিয়ন, ফ্রান্স,
+                    জার্মানি, ভারত, আয়ারল্যান্ড, ইটালী, নেদারল্যান্ড, নরওয়ে, পেরু, রোমানিয়া, সুইজারল্যান্ড,
+                    যুক্তরাজ্য, ভেনেজুয়েলা এবং ফিলিপাইন।
+                    <br><br>
+                    বাংলাদেশ
+                    বাংলাদেশে ২০০৭ সালে সর্বপ্রথম ঢাকা অফিসার্স ক্লাবের কার্যকরী সংসদ নির্বাচনে সনাতনী ধাঁচের পরিবর্তে
+                    ই-ভোটিং পদ্ধতি প্রয়োগ করা হয়। ইতোমধ্যেই আংশিক ও পরীক্ষামূলকভাবে ২টি সিটি কর্পোরেশন নির্বাচনে এর
+                    প্রয়োগ হয়েছে। বন্দরনগরী চট্টগ্রামের সিটি কর্পোরেশনের ১৪টি কেন্দ্রে ও সদ্য গঠিত নারায়ণগঞ্জের সিটি
+                    কর্পোরেশনের ৫৮টি কেন্দ্রে ইলেকট্রনিক ভোটিং মেশিনের মাধ্যমে ভোট গ্রহণ প্রক্রিয়া সম্পন্ন হয়েছে। <br><br><br> ৫
+                    জানুয়ারি, ২০১২ সালে কুমিল্লার সিটি কর্পোরেশনের সবগুলো কেন্দ্রে প্রথমবারের মতো ইভিএম পদ্ধতিতে ভোট
+                    গ্রহণের সিদ্ধান্ত নেয়া হয়েছে।[৩] <br> একাদশ জাতীয় সংসদ নির্বাচন (২০১৮) এ ছয়টি আসনে ইলেকট্রনিক ভোটিং
+                    মেশিন (ইভিএম) ব্যবহার করা হয়। <br><br> এ ছয়টি আসন দ্বৈবচয়নের মাধ্যমে চূড়ান্ত করে নির্বাচন কমিশন। আসনগুলোর
+                    মধ্যে রয়েছে- ঢাকা-৬ ও ঢাকা-১৩, চট্টগ্রাম-৯, রংপুর-৩, খুলনা-২ এবং সাতক্ষীরা-২ আসন।[৪]</p>
+                <h4>সুবিধা-অসুবিধা</h4>
+                <p>সাধারণতঃ দুইটি প্রধান উপায়ে ই-ভোটিং নিশ্চিত করা যায়।[৫][৬]
+
+                    ভোট কেন্দ্রে ইলেকট্রনিক ভোটিং মেশিনের প্রয়োগ হবে। সরকারি অথবা স্বাধীন নির্বাচন কমিশনের প্রতিনিধিরা
+                    সরাসরি তত্ত্বাবধান করবেন।
+                    সরকারি অথবা স্বাধীন নির্বাচন কমিশনের প্রতিনিধিরা সরাসরি তত্ত্বাবধান ছাড়াই দূরবর্তী স্থানে অবস্থানরত
+                    ভোটারগণ তাদের ভোট প্রয়োগে যে-কোনরূপ প্রভাববিস্তার থেকে দূরে থাকতে পারেন। <br><br> এর জন্যে প্রয়োজন -
+                    ব্যক্তিগত কম্পিউটার, মোবাইল ফোন, ইন্টারনেটের সাহায্যে টেলিভিশনের ব্যবহার যা আই-ভোটিং নামে পরিচিত।<br><br>
+                    ভোট প্রয়োগের ক্ষেত্রে উন্নত এবং উচ্চতর প্রযুক্তি ব্যবহারের ফলে অতিদ্রুত ব্যালট পেপার গণনা করা
+                    সম্ভবপর। একই সাথে অক্ষম ভোটারগণও তাদের ভোট সঠিকভাবে প্রয়োগ করতে পারেন।<br><br>
+                    <br>
+                    অন্যদিকে ইলেকট্রনিক ভোটিংয়ের কার্যকারিতা নিয়ে খোঁদ মার্কিন যুক্তরাষ্ট্রেই প্রবল বিতর্কের মধ্যে
+                    রয়েছে। বিশেষ করে ডিআরই পদ্ধতিতে ই-ভোটিংয়ের ফলে নির্বাচনী কারচুপীর ব্যাপক সম্ভাবনা রয়েছে।<br><br>
+
+                    নির্মাতা প্রতিষ্ঠান
+                    ভোট গ্রহণ প্রক্রিয়ার অন্যতম উপকরণ ইভিএম প্রস্তুতকারী দেশসমূহের প্রতিষ্ঠানগুলোর তালিকা নিম্নে দেয়া
+                    হলোঃ-
+
+
+                    <br><br>
+                    ইলেকট্রনিক ভোটিং মেশিন প্রস্ততকারী কোম্পানীর তালিকা
+
+                    ১. ভারত ইলেকট্রনিকস্‌ লিমিটেড ভারত<br>
+                    ২. ডোমিনিয়ন ভোটিং সিস্টেমস্‌ কানাডা<br>
+                    ৩. ইলেকট্রনিকস্‌ কর্পোরেশন অব ইন্ডিয়া লিমিটেড ভারত<br>
+                    ৪. ইএসএন্ডএস মার্কিন যুক্তরাষ্ট্র<br>
+                    ৫. হার্ট ইন্টারসিভিক মার্কিন যুক্তরাষ্ট্র<br>
+                    ৬. নেড্যাপ নেদারল্যান্ডস<br>
+                    ৭. প্রিমিয়ার ইলেকশন সল্যুশনস্‌<br>
+                    (সাবেক ডাইবোল্ড ইলেকশন সিস্টেমস্‌) মার্কিন যুক্তরাষ্ট্র<br>
+                    ৮. সিকোইয়া ভোটিং সিস্টেমস্‌ মার্কিন যুক্তরাষ্ট্র<br>
+                    ৯. ভোটেক্স/টিএম টেকনোলোজিস্‌ ইলেকশনস্‌ ইনকর্পোরেট কানাডা<br><br><br>
+                    এছাড়াও, আকুপোল, এডভান্সড্‌ ভোটিং সল্যুশনস্‌, মাইক্রোভোট, স্মার্টম্যাটিক, ইউনিল্যাক প্রভৃতি
+                    প্রতিষ্ঠানগুলো ইলেকট্রনিক ভোটিং মেশিন প্রস্তুতকারক হিসেবে খ্যাত।
+                    <br>
+                    বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয় বা বুয়েটের তথ্য এবং যোগাযোগ প্রযুক্তি ইনস্টিটিউট বাংলাদেশে ইভিএম
+                    তৈরির নকশা প্রণয়ন ও কারিগরি দিকগুলোর মান উন্নয়ন নিয়ে কাজ করে যাচ্ছে।
+
+                <div class="Author">
+                    <h2>Author</h2>
+                    <img src="gaffar.jpg" alt="">
+                    <h3>MD. ABDUL GAFFAR</h3>
+                    <a href="http://www.facebook.com/abdulgaffar530" target="_blank" title="Facebook">Facebook</a>
+                </div>
+
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Developer by <a href="www.facebook.com/abdulgaffar530" target="_blank"> Abdul Gaffar </a> @ 2022</h2>
+    </div>
+
+</body>
+
+</html>
